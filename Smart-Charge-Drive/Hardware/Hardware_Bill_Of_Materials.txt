@@ -1,0 +1,39 @@
+Smart Charge Drive - Bill of Materials (BOM)
+===========================================
+
+Project: Smart-Charge-Drive
+Purpose: Wireless Charging + Automated Lane Guidance EV Prototype
+
+------------------------------------------------------------
+| Component Name                     | Qty | Specification/Notes                         |
+------------------------------------------------------------
+| Arduino UNO (ATmega328P)           | 1   | Main controller board                       |
+| Copper Coil - Primary (Tx)         | 1   | 18–22 AWG magnet wire, circular coil        |
+| Copper Coil - Secondary (Rx)       | 1   | Same gauge, matched resonant coil           |
+| IR Sensor Modules                  | 2   | Digital Line Following Sensors              |
+| DC Gear Motors                     | 2   | 6–12V, high torque                          |
+| Motor Driver (H-Bridge/MOSFET)     | 1   | IRFZ44N or equivalent                        |
+| MOSFET IRFZ44N                     | 1   | N-Channel Power MOSFET                      |
+| Bridge Rectifier                   | 1   | Converts AC (coil output) to DC             |
+| 7805 Voltage Regulator             | 1   | 5V regulated output                         |
+| LCD Display (16x2, I2C module)     | 1   | Status and voltage display                  |
+| Voltage Sensor Module              | 1   | Analog voltage readout                      |
+| Li-ion Battery Pack (18650)        | 1   | Rechargeable power storage                  |
+| Soldering Wire                     | 1   | For hardware connections                    |
+| Jumper/Connecting Wires            | 1 set | Male-Male / Male-Female as required       |
+| Push Button Switch                 | 1   | System reset/control input                  |
+| Electrolytic Capacitor             | 2   | 10µF – 470µF (for smoothing)                |
+| Ceramic Capacitor                  | 2   | 100nF for noise filtering                   |
+| Resistors (Various Values)         | 4–6 | Common: 330Ω / 1kΩ / 10kΩ                  |
+| Diodes (1N4007 / 1N4148)           | 2–4 | Protection and rectification                |
+| Breadboard / PCB                   | 1   | For circuit assembly                        |
+| USB Cable (Arduino Programming)    | 1   | Type-A to USB-B                             |
+| Foam/Chassis Base                  | 1   | Used as EV vehicle body                     |
+------------------------------------------------------------
+
+Notes:
+- Coil turn count depends on operating frequency (typically 18–25 turns).
+- Ensure heat sinking for 7805 regulator if supply > 9V.
+- Replace IR sensors with vision system if future upgrade planned.
+
+Total Estimated Cost: ₹1500 – ₹3500 depending on components and vendor.
